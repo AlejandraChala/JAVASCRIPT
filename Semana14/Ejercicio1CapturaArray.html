@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECTURA/CAPTURA ARRAYS</title>
+</head>
+<body>
+    <center>
+        <h1>CREACION Y LECTURA DE ARRAYS</h1>
+        <h2>CLICLO FOR</h2>
+        <p>Acontinuacion Se Imprimen Los Datos Almacenados Del Array</p>
+
+        <script>
+
+            //Creacion Array
+            let datos=new Array();
+            let num; //Longitud Ingresada Por El Usuario
+
+            //Captura-Ingreso De Datos
+            num=prompt("Ingrese Cantidad De Elementos A Guardar: ");
+            for(i=0; i<num; i++){
+                datos[i]=prompt("Ingrese Datos Array: "+i);
+            }
+
+            //Lectura De Datos
+            for(i=0; i<num; i++){
+                document.write("<br>" +"<br>");
+                document.write(datos[i]+"<br>");
+                console.log(datos[i]);
+            }
+        </script>
+    </center>
+</body>
+</html>

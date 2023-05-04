@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODO SPLICE</title>
+</head>
+<body>
+    <center>
+        <img src="/img/logoIncap.png" height="150" width="150" alt="">
+        <h1>METODO SPLICE ARRAY</h1>
+        <h2>Busqueda/Eliminacion De Elementos</h2>
+        <br><br>
+        <p>El Nuevo Array Es El Siguiente</p>
+
+        <script>
+            let std=new Array();
+            let num;
+
+            //Captura
+            num=parseInt(prompt("Ingrese La Cantidad De Estudiantes A Guardar"));
+            for(i=0;i<num;i++){
+                std[i]=prompt("Ingrese Nombre Del Nuevo Estudiante " +i);
+            }
+
+            //Busqueda
+            let datob=prompt("Ingrese Estudiante A Eliminar");
+            let find=std.indexOf(datob.trim());
+
+            //Metodo Splice
+            if(find>-1){
+                let index=std.splice(find,1) //Eliminar En El Mismo Lugar
+                alert("Estudiante Exitosamente Eliminado De La Lista " +"\n" + "Lista Nueva"+std);
+            }else{
+                alert("ERROR Estudiante NO Encontrado En Lista ");
+            }
+
+            //Imprimir En Pantalla
+            document.write(std+" ");
+            console.log(std);
+        </script>
+    </center>
+</body>
+</html>
