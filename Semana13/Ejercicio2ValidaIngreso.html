@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO DE INGRESO</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>VALIDACION DE INGRESO SESION</h1>
+        <h2>CICLO FOR-CONTRASEÑA</h2>
+        <script>
+            let datof;
+            let sw=0; //Switche apagado
+            let clave=123; //Clave Ingreso
+
+            //Ciclo FOR   "Solo Tendra Tres Intentos Disponibles"
+            for(f=1;f<=3;f++){
+                datof=parseInt(prompt("Ingrese Contraseña "));
+                if(datof==clave){ //Validacion Contraseña Ingresada
+                    swal("USUARIO","ACCESO PERMITIDO", "success");
+                    document.write("ACCESO PERMITIDO");
+                    sw=1; //Switche Prendido
+                    break;
+                }
+            }
+
+            //Validacion sw=0
+            if(sw==0){
+                swal("USUARIO","CUENTA TEMPORALMENTE SUSPENDIDA","error");
+                document.write("CUENTA SUSPENDIDA");
+            }
+            
+        </script>
+    </center>
+</body>
+</html>

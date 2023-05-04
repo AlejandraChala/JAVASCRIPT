@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO FOR IMPAR</title>
+</head>
+<body>
+    <center>
+        <h1>GENEERACION DE NUMEROS IMPARES</h1>
+        <h2>CICLO FOR</h2>
+        <h3>Ingresar Por Teclado Rango Numerico A Evaluar</h3>
+        <script>
+            let inicio, final; //Variables del rango numerico a evaluar
+            let num=0; //Contador de numeros generados
+
+            //Entrada
+            inicio=parseInt(prompt("Ingrese Numero Inicial Del Rango Numerico "));
+            final=parseInt(prompt("Ingrese Numero Final Del Rango Numerico "));
+
+            //Proceso Ciclo For
+            for(f=inicio; f<=final;f++){
+                if(f%2==1){ //Condicional Para Evaluar Numero Impar, Con Residuo 0
+                    document.write("<br>");
+                    document.write("Numero Impar "+f+"<br>");
+                    num++; //Contador De Numeros Impares
+                }
+            }
+            document.write("<br>");
+            document.write("Total De Numeros Impares Generados "+num+"<br>");
+        </script>
+    </center>
+</body>
+</html>
