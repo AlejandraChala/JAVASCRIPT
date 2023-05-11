@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTAS STD</title>
+    <link rel="stylesheet" href="./CSS/Notas.css">
+    <script src="./JS/Notas.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/IMG/logoincap.png" height="150" width="150" alt="">
+            <h1>INCAP, LA VIA DEL PROGRESO</h1>
+        </header>
+        <form  class="form">
+            <h2>CALCULO DE NOTAS PAE JS</h2>
+
+            <label for="Nota 1">Nota 1</label>
+            <input type="text" id="Nota 1" class="box">
+
+            <label for="Nota 2">Nota 2</label>
+            <input type="text" id="Nota 2" class="box">
+
+            <label for="Nota 3">Nota 3</label>
+            <input type="text" id="Nota 3" class="box">
+
+            <label for="Def">DEFINITIVA</label>
+            <input type="text" id="Definitiva" class="box" disabled>
+
+            <input type="button" value="Calcular" class="submit" onclick="promedio()">
+            <input type="button" value="Limpiar" class="submit" onclick="limpiar()">
+        </form>
+
+    </div>
+</body>
+</html>
