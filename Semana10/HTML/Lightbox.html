@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISOR LIGHTBOX</title>
+  <link rel="stylesheet" href="/CSS/Visor.css">
+</head>
+<body>
+  <img src="../img/logo.jpg" alt="" width="100" height="100" style="border-radius: 20px;padding: 10px;">
+  <h2 style="text-align: center;">****** VISOR DE IMAGENES EN LIGHTBOX ******</h2>
+<br><br>
+
+<div class="row">
+  <div class="column">
+    <img src="../img/jabon1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <figcaption>Jabon1</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/jabon2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <figcaption>Jabon2</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/jabon3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <figcaption>Jabon3</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/jabon4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <figcaption>Jabon4</figcaption>
+  </div>
+</div>
+<!-- 2da row -->
+<div class="row">
+  <div class="column">
+    <img src="../img/velas.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    <figcaption>Velas1</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/velas2.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    <figcaption>Velas2</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/velas3.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    <figcaption>Velas3</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/velasaromaticas.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+    <figcaption>Velas Aromaticas</figcaption>
+  </div>
+</div>
+<!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="../img/jabon1.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="../img/jabon2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="../img/jabon3.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="../img/jabon4.jpg" style="width:100%">
+    </div>
+    <!-- seccion velas-->
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="../img/velas.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="../img/velas2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="../img/velas3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="../img/velasaromaticas.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- SECCION DE COLUMNAS IMAGENES EN MINIATURA -->
+
+    <div class="column">
+      <img class="demo cursor" src="../img/jabon1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/jabon2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/jabon3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/jabon4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+<!-- seccion velas -->
+<div class="column">
+  <img class="demo cursor" src="../img/velas.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+</div>
+<div class="column">
+  <img class="demo cursor" src="../img/velas2.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+</div>
+<div class="column">
+  <img class="demo cursor" src="../img/velas3.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+</div>
+<div class="column">
+  <img class="demo cursor" src="../img/velasaromaticas.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+</div>
+  </div>
+</div>
+<script src="/js/Visor.js"></script>
+</body>
+</html>
+

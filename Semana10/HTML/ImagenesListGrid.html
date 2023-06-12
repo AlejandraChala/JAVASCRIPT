@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIST GRID VIEW</title>
+  <!-- link fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- ZONA DE LINK -->
+<link rel="stylesheet" href="/CSS/ListGrid.css">
+<script src=""></script>
+</head>
+<body>
+  <!-- PLANTILLA BOOTSTRAP PARA CONFIGURAR GALERIA LIST AND GRID VIEW -->
+<!-- MAIN -->
+<div class="main">
+
+  <h1>TIENDA MI SPA</h1>
+  <hr>
+  
+  <h2>PORTAFOLIO DE TIENDA ONLINE</h2>
+  <div id="btnContainer">
+    <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> Lista</button> 
+    <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    <div><!-- cambio toggle switch-->
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+  </div>
+  <br>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column velas">
+      <div class="content">
+       <a href=""><img src="../img/velas.jpg" alt="" style="width:250px; height:250px;"></a>
+        <h4>Velas Tradicionales</h4>
+        <p>Velas Redondas, Con Aromatizante Natural  </p>
+      </div>
+    </div>
+    <div class="column velas">
+      <div class="content">
+        <a href="">
+      <img src="../img/velas2.jpg" alt="" style="width:250px;height:250px;"></a>
+        <h4>Velas Formas Muñecos</h4>
+        <p>Velas Forma Muñecos Navideños</p>
+      </div>
+    </div>
+    <div class="column velas">
+      <div class="content">
+      <img src="../img/velas3.jpg" alt="" style="width:250px;height:250px;">
+        <h4>Velas Formas Variadas</h4>
+        <p>Velas Formas Variadas Coleccionable</p>
+      </div>
+    </div>
+    
+    <div class="column productos">
+      <div class="content">
+        <img src="../img/shampoo.jpg" alt="" style="width:250px;height:250px;">
+        <h4>Shampoo Artesanal</h4>
+        <p>Shampoo Artesanal De Romero.</p>
+      </div>
+    </div>
+    <div class="column productos">
+      <div class="content">
+      <img src="../img/jabon5.jpg" style="width:250px;height:250px;">
+        <h4>Jabones Recordatorios</h4>
+        <p>Jabones Con Formas Variadas, Para Recordatorios De Baby Shower</p>
+      </div>
+    </div>
+    <div class="column productos">
+      <div class="content">
+      <img src="../img/decoracion1.jpg" alt="" style="width:250px;height:250px;">
+        <h4>Decoracion</h4>
+        <p>Decoracion Para Cualquier Ocasion Especial.</p>
+      </div>
+    </div>
+  
+    <div class="column servicios">
+      <div class="content">
+        <img src="../img/bañoturco.jpg" alt="" style="width:250px;height:250px;">
+        <h4>Baño Turco</h4>
+        <p>Baño Turco, Para Relajacion</p>
+      </div>
+    </div>
+    <div class="column servicios">
+      <div class="content">
+      <img src="../img/masaje1.jpg" alt="" style="width:250px;height:250px;">
+        <h4>Masaje</h4>
+        <p>Masaje Relajantes</p>
+      </div>
+    </div>
+    <div class="column servicios">
+      <div class="content">
+      <img src="../img/mascarilla1.jpg" alt="" style="width:250px;height:250px;">
+        <h4>Mascarilas</h4>
+        <p>Mascarillas Faciales Hidrantates </p>
+      </div>
+    </div>
+  <!-- END GRID CONTAINER-->
+  </div>
+  
+  <!-- END MAIN CONTAINER-->
+  </div>
+  <script>
+  //  BOTÓN TOGGLE SWITCHE
+  const chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+  });
+  </script>
+</body>
+</html>
